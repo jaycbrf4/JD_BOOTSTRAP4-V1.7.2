@@ -1,19 +1,36 @@
-=== JD-Bootstrap4 ===
+#=== JD-Bootstrap4 ===
+
+
 Contributors: JayDeutsch @jaycbrf4
+
+
 Tags: Completely Custom Built, Responsive, Bootstrap4, FontAwesome, Nivo-Lightbox, Animate.css, Wow.js
+
+
 Tested up to: 5.1.1
+
+
 Version 1.7.2
+
+
 License: GPLv2 or later
+
+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 
-== Description ==
+
+###== Description ==
 A responsive WordPress theme built upon the Twitter Bootstrap framework.
 
 
-== Features: ==
+
+
+###== Features: ==
 Starter theme. Completely customizable.
+
+
 Nivo Lightbox
 Animate.css
 Wow.js
