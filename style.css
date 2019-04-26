@@ -1,0 +1,250 @@
+/*
+Theme Name: JD_BOOTSTRAP4-MegaMenu
+Theme URI: http://HudsonValleyWebDesign.net
+Description: Responsive WordPress Theme built with Bootstrap4, Font Awesome Pro, Animate.css, Nivo Lightbox, WoW.js
+Author: Jay Deutsch @jaycbrf4
+Version: 1.7.2
+Tags: COMPLETELY CUSTOM BUILD, Bootstrap, FontAwesome, responsive-layout, Mega Menu
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/*  GOOGLE FONTS */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,400italic,700,700italic);
+
+/****************************************************************************************/
+/*************************************************************
+   |  |  |                  SITE COLORS                  |  |  |
+**************************************************************
+Dark Blue -   #0b4369        11,67,105
+Red -         #c21513        194,21,19
+Lite Blue -   #006cb6        0,108,182
+
+*****************************/
+
+/*****************************
+BASE STYLES
+*****************************/
+*, *:active, *:focus, *:visited {
+    outline: 0;
+    outline:none;
+    -moz-outline-style: none;
+}
+a, a:active, a:focus, 
+button, button:focus, button:active, 
+.btn, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+    outline: none;
+    outline: 0;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+}
+a {
+  transition:color .2s linear;
+  color: #999;
+  text-decoration: none;
+}
+a:visited {
+  color:  #00b0f0;
+  text-decoration: none !important;
+      background: none;
+}
+a:hover {
+  color: #666;
+  text-decoration: none !important;
+}
+a:focus {
+  text-decoration: none !important;
+}
+a:active {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+    -moz-outline-style: none;
+}
+li.current a {
+    font-weight: 700;
+}
+html {
+  min-width: 320px !important;
+  font-size: 14px;
+}
+.wow {visibility: hidden;}
+h1.h2{font-weight: 600;}
+/* box shadow on top of page */
+body:before { 
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+  -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+  box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+}
+
+body {
+  font-family: 'Open Sans';
+  padding-bottom: 0;
+  }
+
+.no-pad {padding: 0;}
+.clear {clear: both;}
+hr{ width:80%; border: 0; height: 2px; background: #333; background-image: -webkit-linear-gradient(left, #666, #333, #666); background-image: -moz-linear-gradient(left, #666, #333, #666); background-image: -ms-linear-gradient(left, #666, #333, #666); background-image: -o-linear-gradient(left, #666, #333, #666); }
+
+.logo {
+    margin-top: 3px;
+}
+.centered {
+  margin: 0 auto;
+} 
+
+#content {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+/*
+*Nav
+*
+*/
+.navbar {
+    border-radius: 0;
+}
+.divider { border-right: 1px solid #ccc; margin: 0 10px;}
+.navbar-nav > li > a {color: #fff; letter-spacing: 2px; text-transform:uppercase; padding: 10px;}
+.navbar-nav > li > a {padding-bottom: 15px;padding-top: 8px; font-family: 'Open Sans'; font-weight: 700; font-size: 14px;}
+.dropdown-menu a { color: #000;}
+.dropdown-menu > li > a {padding: 8px; }
+
+
+
+
+
+
+
+/**Mega Menu **/
+.navbar .container {
+    position: relative;
+}
+.navbar-nav, .navbar .collapse, .navbar-nav li {
+  position: static;
+}
+.menu-item-has-children, .menu-item-has-children .dropdown-menu {
+  left: auto;
+}
+.menu-item-has-children .dropdown-menu {
+  width: auto !important;
+}
+.mega-menu-wrapper {
+  width: 100%;
+}
+
+
+#logo img {
+  max-width:350px;
+  padding-top: 0;
+  transition: all .5s ease;
+}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^ Main Styles ^^^^^^^^^^^^^^^^^^^^*/
+.sep1 {background: #333; padding: 50px;text-align:center; color: #fff;}
+
+
+
+
+
+
+
+
+
+
+/*
+* FOOTER
+*
+*/
+footer#footer{
+  background: #9431cd;
+  padding: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Make dropdown visible on hover */
+@media (min-width: 767px) {
+  .dropdown > .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    z-index: 1000;
+    float: none;
+    min-width: 10rem;
+    padding: 1rem;
+    list-style: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 0;
+    margin-top: 11px !important;
+    display: block;
+    visibility:hidden;
+    min-width: 150px;
+    transition: all  0.2s ease-in-out;
+  }
+  .dropdown:hover > .dropdown-menu {
+    visibility:visible;
+    display: block;
+    opacity: 1;
+    margin-top: 7px !important; 
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    transition: all  0.2s ease-in-out;
+  }
+    .mega-menu-parent.dropdown .dropdown-menu {
+    position: absolute;
+    left:  0;
+  }
+}
+
+
+.scrollup{
+  position:fixed;
+  bottom: 30px;
+  right: 30px;
+  display:none;
+  color: #666;
+  z-index: 1000;
+  font-size: 36px;
+}
+a.scrollup svg{
+  color: #666;
+  transition:  color .2s linear;
+}
+a.scrollup:hover svg{
+  opacity: 1;
+  color: #1e1f50;
+  cursor: pointer;
+}

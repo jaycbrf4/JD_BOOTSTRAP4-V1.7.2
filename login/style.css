@@ -1,0 +1,97 @@
+/* 
+Custom login screen styles
+*/
+
+
+* {
+	transition: all .2s linear;
+} 
+body.login {
+background:url('bkg.jpg') no-repeat center center;
+background-size: cover;
+}
+
+.login h1 a {
+background-image: url('login.png');
+background-size: 423px 57px;
+width: 423px;
+height: 57px;
+}
+
+#login {
+padding: 30px 0 0;
+width: 423px;
+}
+
+.login form {
+margin-left:auto;
+margin-right:auto;
+padding:30px;
+border: 1px solid rgba(0,0,0,.2);
+background-clip: padding-box;
+background: rgba(255, 255, 255, 0.9);
+box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+overflow: hidden;
+opacity: 0.8;
+border-radius: 8px;
+
+}
+
+.login label {
+color: #333;
+line-height: 26px;
+}
+
+.login #backtoblog a, .login #nav a, .login h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login #backtoblog a:hover, .login #nav a:hover, .login h1 a:hover {
+    color: #000;
+}
+
+.login .button-primary {
+width: 120px;
+float:right;
+background: #00b0f0;
+text-shadow: #666 0 1px 0;
+color: #666;
+}
+.login .button-primary:hover {
+background: #00b0f0;
+color: #fff;
+}
+
+.login .button-primary:active {
+background: #00b0f0;
+color: #ffffff;
+}
+
+.login .message {
+    background-color: #fff;
+    border-left: 4px solid #00b0f0;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    opacity: .8;
+}
+.login #login_error {
+    border-left-color: #dc3232;
+    opacity: 0.8;
+}
+
+
+@media (max-width: 440px) {   
+
+	#login {
+		width: 310px;
+	}
+
+	.login h1 a {
+		background-image: url('login_sm.png');
+		background-size: 300px 40px;
+		width: 300px;
+		height: 40px;
+		}
+
+	}
